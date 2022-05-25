@@ -1,0 +1,414 @@
+@charset "utf-8";
+body {
+  width: 100%;
+  font-size: 100%;
+  color: rgb(59, 59, 59);
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: rgb(59, 59, 59);
+}
+li {
+  list-style: none;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+.flex {
+  display: flex;
+}
+a:hover {
+  color: rgb(0, 163, 0);
+}
+#shop,#goods,#access,#contact {
+  border-radius: 25% 25% 0 0;
+}
+section {
+  margin-top: 180px;
+}
+
+/*header*/
+header {
+  height: 100vh;
+  background: url(../img/dango.png) ;
+  border-radius: 35% 0 35% 0;
+}
+.base_wrap {
+  margin: 0 auto;
+}
+
+.logo {
+  width: 17%;
+  margin-left: 40px;
+}
+body.nav_op {
+  /*　この部分　スマホ　ハンバーガーメニューに必要　*/
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
+}
+
+/*　PCメニューの例　*/
+.g_nav {
+  display: flex;
+  margin: 0 -2rem;
+  margin: 40px 0 0 270px;
+}
+.g_nav li {
+  margin: 0 2rem;
+}
+.g_nav li a {
+  color: #107737;
+  font-weight: bold;
+  font-size: 30px;
+}
+.g_nav li a:hover {
+  color: rgb(0, 163, 0);
+}
+.g_nav_toggle {
+  display: none;
+}
+header p {
+  font-size: 60px;
+  margin-left: 700px;
+  margin-top: 140px;
+}
+
+/*shop*/
+
+#shop {
+  height: 500px;
+  background: rgb(187, 212, 193,.5);
+}
+#shop img {
+  width: 40%;
+  padding: 40px;
+  border-radius: 50%;
+  margin-left: 70px;
+}
+
+.text {
+  width: 42%;
+  padding: 40px;
+}
+.text p {
+  margin-bottom: 45px;
+}
+aside {
+  width: 20%;
+  margin: 35px 80px 0 0;
+}
+aside h1 {
+  margin: 30px;
+  border-bottom: 1px solid green;
+}
+aside li {
+  margin: 30px;
+  border-bottom: 1px solid rgb(134, 206, 134);
+}
+
+
+
+/*goods*/
+#goods {
+  margin: 250px 0;
+  padding: 50px;
+  background: rgb(255, 222, 228,.5);
+}
+#goods > .goods img {
+  width: 10%;
+  height: 10%;
+  object-fit: cover;
+  margin: 10px 20px 0 20px;
+}
+.goods {
+  justify-content: center;
+}
+
+/*access*/
+#access {
+  background: rgb(187, 212, 193,.5);
+  padding: 50px 0;
+}
+#access h1 {
+  margin-bottom: 60px;
+  text-align: center;
+}
+.access {
+  justify-content: center;
+  margin: 0 250px 0 460px;
+}
+dl {
+  flex-wrap: wrap;
+  width: 40%;
+  margin-top: 20px;
+}
+dt {
+  font-weight: bold;
+  width: 25%;
+  margin-bottom: 10px;
+}
+dd {
+  width: 65%;
+  margin-bottom: 10px;
+}
+.sns {
+  margin-left: 10px;
+}
+.sns a {
+  margin-top: 428px;
+  margin-left: 20px;
+}
+
+
+
+/*contact*/
+#contact {
+  text-align: center;
+  margin-bottom:  100px;
+  background: rgb(255, 222, 228,.5);
+  padding: 5% 25%;
+}
+#contact h1 {
+  text-align: center;
+}
+.contact {
+  flex-wrap: wrap;
+}
+.contact p {
+  font-weight: bold;
+  margin-top: 50px;
+  width: 30%;
+}
+.contact > input,
+textarea {
+  border: 1px solid rgb(73, 80, 73);
+  border-radius: 5px;
+  background: white;
+}
+.contact > input {
+  width: 50%;
+  height: 90%;
+  margin: 40px 70px 0 0;
+}
+textarea {
+  width: 50%;
+  height: 100px;
+  margin: 40px 0;
+}
+#contact a {
+  position: absolute;
+  margin-top: 30px;
+}
+.checkbox {
+  margin-right: 10px;
+}
+.button {
+  position: relative;
+  top: 50px;
+  left: 0px;
+  border: 1px solid pink;
+  border-radius: 5px;
+  background: pink;
+  padding: 10px 60px;
+  margin-top: 20px;
+}
+.footer {
+  color: rgb(75, 165, 75);
+  font-size: 0.8rem;
+  display: inline;
+  text-align: center;
+}
+.footer a {
+  margin: 3px 5px;
+}
+
+
+
+
+@media screen and (max-width:880px) {
+  .flex {
+    display: block;
+  }
+  body {
+    font-size: 0.9rem;
+  }
+  section {
+    margin-top: 100px;
+  }
+  h1 {
+    font-size: 1rem;
+  }
+  .logo {
+    width: 40%;
+    margin:0;
+  }
+  header {
+    background: url(../img/dango.png) no-repeat center / cover;
+  }
+  header p {
+    font-size: 1rem;
+    margin: 140px 0 0 70px;
+  }
+  .g_nav {
+    margin: 0 auto;
+  }
+  .g_nav li a {
+    font-weight: normal;
+    font-size: 20px;
+  }
+  
+  .g_nav_toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 16px;
+    padding: 3px 0;
+    width: 32px;
+    height: 32px;
+    z-index: 10;
+    cursor: pointer;
+  }
+  .g_nav_toggle .bar {
+    height: 2px;
+    background: #2d9957;
+    transition: all 0.2s ease-out 0s;
+  }
+  .nav_op .g_nav_toggle .bar {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .nav_op .g_nav_toggle .bar:first-child {
+    transform: translateY(-50%) rotate(45deg);
+  }
+  .nav_op .g_nav_toggle .bar:nth-child(2) {
+    transform: scale(0);
+  }
+  .nav_op .g_nav_toggle .bar:nth-child(3) {
+    transform: translateY(-50%) rotate(-45deg);
+  }
+  .g_nav_wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 80px 2rem 20px;
+    width: 100%;
+    height: 100vh;
+    transform: translateY(-100%);
+    background: rgba(249, 255, 251, 0.9);
+    overflow: auto;
+    transition: all 0.2s ease-out 0s;
+    z-index: 2;
+  }
+  .nav_op .g_nav_wrap {
+    transform: none;
+  }
+  .g_nav {
+    font-size: inherit;
+    display: block;
+    position: static !important;
+    padding: 0 !important;
+    margin-top: 2rem;
+    background: transparent;
+    border-top: dotted 1px #32b875;
+  }
+  .g_nav li {
+    margin: 0;
+    padding: 1rem 0;
+    text-align: center;
+    border-bottom: dotted 1px #32b875;
+  }
+  .g_nav li a:after {
+    display: none;
+  }
+  .g_nav li a img {
+    height: 40px !important;
+  }
+  .g_nav li a .name_wrap {
+    display: inline-block !important;
+  }
+
+  #shop img {
+    margin: 20px 100px 0 100px;
+    padding: 0;
+  }
+  .text {
+    width: 100%;
+    padding: 15px;
+  }
+  aside {
+    width: 100%;
+    margin: 0;
+  }
+  aside h1,aside li {
+    margin: 10px;
+  }
+  .goods {
+    text-align: center;
+  }
+  #goods {
+    padding: 30px;
+    margin-bottom: 0;
+  }
+  #goods > .goods img {
+    width: 20%;
+    margin: 5px;
+  }
+  .access {
+    margin: 0 25px;
+  }
+  dl {
+    width: 100%;
+  }
+  dt {
+    margin: 0;
+    width: 100%;
+  }
+  dd {
+    width: 100%;
+    border-bottom: solid 1px rgb(90, 90, 90,.5);
+  }
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .access .sns a {
+    margin: 0 15px 0 0;
+  }
+  #contact {
+    padding: 10%;
+    margin-bottom: 40px;
+    height: 550px;
+  }
+  .contact p {
+    margin: 25px 0 0 60px;
+    text-align: left;
+    width: 50%;
+  }
+ .contact input,textarea {
+    width: 60%;
+    margin:0;
+  }
+
+  .footer .sns {
+    text-align: right;
+    margin: 0 ;
+    text-align: center;
+  }
+  
+  
+}
