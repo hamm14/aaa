@@ -239,5 +239,27 @@
 
   });
 </script>
+
+<script>
+  //* スクロール
+
+  $(function () {
+    var _height = window.innerHeight;
+    var b_height = $('body').height();
+
+    $(window).on('scroll',function () {
+      if ($(window).scrollTop() < _height *0.5) {
+        $('body').removeClass('scrolled');
+      } else {
+        $('body').addClass('scrolled');
+      }
+      if ($(window).scrollTop() > b_height - (_height * 1.5)) {
+        $('body').addClass('scroll_end');
+      } else {
+        $('body').removeClass('scroll_end');
+      }
+    });
+  });	
+</script>
 </body>
 </html>
